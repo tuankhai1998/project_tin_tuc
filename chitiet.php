@@ -270,7 +270,7 @@
                         <!-- end item -->
 
                         <!-- item -->
-                        <div class="row" style="margin-top: 10px;">
+                        <div class="row" style="margin-top: 10px;"> 
                             <div class="col-md-5">
                                 <a href="detail.html">
                                     <img class="img-responsive" src="public/images/320x150.png" alt="">

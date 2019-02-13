@@ -5,8 +5,6 @@ $noi_dung = $c_tintuc->index();
 $slide = $noi_dung['slide'];
 $menu = $noi_dung['menu'];
 // print_r($menu);
-
-
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +18,7 @@ $menu = $noi_dung['menu'];
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Tin Tức TLU </title>
+    <title>Tin Tức 24h </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
@@ -163,8 +161,8 @@ $menu = $noi_dung['menu'];
 								foreach($loaitin as $loai){
 									list($id, $ten, $tenkhongdau ) = explode( ':' ,$loai)	;					
 								?>
-									<li class="list-group-item">
-										<a href="loaitin.html"><?=$ten?></a>
+									<li class="list-group-item">                                        
+										<a href="loaitin.php?idloai=<?=$id?>"><?=$ten?></a>
 									</li>									
 								<?php
 								}					
@@ -213,7 +211,7 @@ $menu = $noi_dung['menu'];
 												</div>
 												<div class="col-md-9">
 													<h3><?=$mn->TieuDeTin?></h3>
-													<p><?=$mn->NoiDungTin?></p>
+													<p><?=$mn->TomTatTin?></p>
 													<a class="btn btn-primary" href="chitiet.php">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
 												</div>
 
@@ -225,10 +223,40 @@ $menu = $noi_dung['menu'];
 							<div class="break"></div>
 		                </div>
 		                <!-- end item -->		          
-					</div>
+                    </div>
+                    <!-- <div class="row text-center">
+                        <div class="col-lg-12">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#">&laquo;</a>
+                                </li>
+                                <li class="active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
 	            </div>
-        	</div>
+            </div>
+           
         </div>
+      
+
         <!-- /.row -->
     </div>
     <!-- end Page Content -->
